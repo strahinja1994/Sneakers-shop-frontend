@@ -1,0 +1,28 @@
+$color1:#ffffff;
+$color2:#dae0f2;
+$color3:#8f9695;
+$color4:#f9cff2;
+$color5:#52154e;
+$color6:#d1eded;
+$color7:#111344;
+$spanColor:#e3ed58;
+$closeColor:#e82333;
+$loginColor:#686e6d;
+
+$font-size1:small;
+$font-size2:medium;
+$font-size3:large;
+$font-size4:x-large;
+$font-size5:xx-large;
+
+$bold:bold;
+
+@font-face {
+    font-family: labelFont;
+    src:url(/fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: textFont;
+    src:url(/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}

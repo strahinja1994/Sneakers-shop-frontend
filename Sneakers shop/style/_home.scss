@@ -1,0 +1,186 @@
+.home{
+    width:100%;
+    display:flex;
+    background-color: $color2;
+    margin-bottom: 70px;
+}
+
+.home__brands{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:50%;
+}
+
+.home__brands-image-wrapper{
+    width:70%;
+    min-height: 350px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home__brands-image{
+    width: 100%;
+    padding-bottom:20%;
+    height:100%;
+    position: absolute;
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    top:0;
+    left:0;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.home__brands-title{
+    font-size: 50px;
+    color:$color7;
+}
+
+.home__brands-image--active{
+    transform:translateX(0);
+    opacity: 1;
+}
+
+.home__brands-image--next{
+    transform: translateX(100%);
+}
+
+.home__brands-image--previous{
+    transform: translateX(-100%);
+}
+
+.home__brands-one{
+    background-image:url('../images/adidas.jpg');
+}
+
+.home__brands-two{
+    background-image:url('../images/nike.jpg');
+}
+
+.home__brands-three{
+    background-image:url('../images/peak.png');
+}
+
+.home__brands-four{
+    background-image:url('../images/armour.jpg');
+}
+
+.home__brands-buttons{
+    width:30%;
+    display:flex;
+    justify-content: center;
+
+    button{
+        border:none;
+        background:transparent;
+        cursor: pointer;
+        color:$color7;
+        transition: 0.3s ease-in-out;
+    }
+
+    i{
+        font-size: 100px;
+        padding:20px;
+    }
+
+    i:hover{
+        color:$color1;
+    }
+}
+
+.home__title{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+}
+
+
+.home__title-circle{
+    border-radius: 50%;
+    background-image: linear-gradient(360deg,$color5,$color4);
+    height:30vw;
+    width:30vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__title-heading{
+    text-align: center;
+    color:$color1;
+    letter-spacing: 3px;
+    font-size: 70px;
+}
+
+.home__title-text{
+    padding:40px 20px 40px;
+    font-size: $font-size3;
+    line-height: 30px;
+}
+
+@media screen and (min-width:600px) and (max-width:1000px) {
+
+    .home__brands{
+        justify-content: center;
+        gap:40px;
+    }
+
+    .home__brands-image-wrapper{
+        width:90%;
+    }
+
+    .home__title-circle{
+        height:40vw;
+        width:40vw;
+    }
+
+    .home__title-text{
+        padding:30px 20px 30px;
+        font-size: $font-size2;
+        line-height: 20px;
+    }
+
+    .home__title-heading{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home__brands{
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        order:2;
+    }
+
+    .home__brands-image-wrapper{
+        width: 90%; // proveri zasto nece da centrira
+    }
+
+    .home__title{
+        width:100%;
+        order:1;
+    }
+
+    .home__title-circle{
+        width:60vw;
+        height:60vw;
+    }
+
+    .home__title-heading{
+        letter-spacing: 2px;
+        font-size: 40px;
+    }
+}

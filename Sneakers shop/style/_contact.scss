@@ -1,0 +1,31 @@
+.contact{
+    background: $color2;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact__links a{
+    padding:20px 20px 0;
+
+    i{
+        font-size: $font-size5;
+    }
+
+    i:hover{
+        color: $color7;
+    }
+}
+
+.contact__email{
+    font-size: $font-size3;
+}
+
+@media screen  and (max-width:400px) {
+    .contact{
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+} 

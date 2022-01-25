@@ -1,0 +1,379 @@
+.shop{
+    height: 100vh;
+    position:relative;
+    min-height:550px;
+}
+
+.shop__article{
+    position: absolute;
+    width:30%;
+    height:92vh;
+    top:0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shop__article-image{
+    width:70%;
+    height:70%;
+    position: relative;
+}
+
+.shop__article-cover{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.shop__article-one{
+    background-image:url('../images/items/Kevin-durant-14-cover.jpg');
+}
+
+.shop__article-two{
+    background-image:url('../images/items/Air-Jordan-cmft-low-cover.jpg');
+}
+
+.shop__article-three{
+    background-image:url('../images/items/adidas-don-issue-3-cover.jpg');
+}
+
+.shop__article-four{
+    background-image:url('../images/items/Nike-lebron-18-cover.jpg');
+}
+
+.shop__article-five{
+    background-image:url('../images/items/Jordan-max-aura-cover.jpg');
+}
+
+.shop__article-six{
+    background-image:url('../images/items/Dame-7-gca-cover.jpg');
+}
+
+.shop__article-seven{
+    background-image:url('../images/items/Harden-stepback-2-cover.jpg');
+}
+
+.shop__article-eight{
+    background-image:url('../images/items/converse-4-cover.jpg');
+}
+
+.shop__article-nine{
+    background-image:url('../images/items/Kyrie-flytrap-4-cover.jpg');
+}
+
+.shop__article-ten{
+    background-image:url('../images/items/Nike-renew-elevate-cover.jpg');
+}
+
+.shop__article-eleven{
+    background-image:url('../images/items/D-rose-11-cover.jpg');
+}
+
+.shop__article-twelve{
+    background-image:url('../images/items/Paul-george-5-cover.jpg');
+}
+
+.shop__article-thirteen{
+    background-image:url('../images/items/Under-armour-ua-spawn-3-cover.jpg');
+}
+
+.shop__article-fourteen{
+    background-image:url('../images/items/Under-armour-ua-jet-cover.jpg');
+}
+
+.shop__article-fifteen{
+    background-image:url('../images/items/D-rose-773-2020-cover.jpg');
+}
+
+.shop__article-sixteen{
+    background-image:url('../images/items/Jordan-access-cover.jpg');
+}
+
+.shop__article-cover--active{
+    opacity:1;
+}
+
+.shop__article-button{
+    display: block;
+    padding:10px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px grey;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: $font-size3;
+    margin:10px;
+}
+
+.shop__items{
+    width:70%;
+    height:92vh;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    overflow: auto;
+}
+
+.shop__items-item{
+
+    height:40%;
+    min-height: 350px;
+    width:23%;
+    min-width:150px;
+    margin:30px 10px 30px;
+
+    img{
+        width:100%;
+        cursor: pointer;
+    }
+
+    h3{
+        padding:2px;
+        letter-spacing: 1px;
+    }
+
+    p{
+        letter-spacing: 1px;
+        padding:2px 10px 0;
+        font-weight: $bold;
+    }
+
+    span{
+        color:$spanColor;
+        padding-left:5px;
+    }
+}
+
+.main{
+    position: relative;
+}
+
+.shop__mobile{
+    transition:0.5s ease-in-out;
+    display: none;
+}
+
+
+
+@media screen and (min-width:1100px) and (max-width:1500px) {
+    .shop__items-item{
+        width:30%;
+        min-height: 320px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1099px){
+
+
+    .shop__items-item{
+        min-height: 350px;
+        margin:auto;
+        width:50%;
+
+        img{
+            width:70%;
+        }
+
+        h3{
+            padding:10px;
+        }
+
+        p{
+            padding:2px 10px 0;
+        }
+    }
+    .shop__article-image{
+        width:80%;
+        height:100%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:699px) {
+
+    .shop__items-item{
+        width:90%;
+        min-height:300px;
+
+        img{
+            width:70%;
+        }
+
+        h3,p{
+            padding:2px;
+        }
+    }
+
+    .shop__article-image{
+        width:80%;
+        height:100%;
+    }
+
+}
+
+@media screen and (max-width:499px) {
+    .shop{
+        height:auto;
+    }
+
+    .shop__article{
+        display:none;
+    }
+
+    .shop__items{
+        width:100%;
+        height: auto;
+    }
+
+    .shop__items-item{
+        width:90%;
+        min-height: 350px;
+        margin-top: 20px;
+
+        h3,p{
+            padding:5px;
+        }
+    }
+
+    .shop__mobile-active{
+        width:100vw;
+        height:100vh;
+        position: fixed;
+        overflow: hidden;
+        background-color: rgba($loginColor,0.97);
+        left:0;
+        top:0;
+        display: block;
+        z-index: 10;
+    }
+
+    .shop__mobile-article{
+        margin:30px auto 50px;
+        width:60%;
+        height:70%;
+        min-height: 300px;
+        z-index: 100;
+        position: relative;
+    }
+
+    .shop__mobile-cover{
+        position: absolute;
+        top:50px;
+        left:0;
+        width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: none;
+    }
+
+    .shop__mobile-cover-active{
+        display:block;
+    }
+    
+    .shop__mobile-close{
+        position: absolute;
+        top:0;
+        right:0;
+        padding:20px;
+        border:none;
+        background: transparent;
+        padding:10px;
+        margin:20px;
+    
+        i{
+            font-size: 40px;
+            color:$closeColor;
+            cursor: pointer;
+        }
+    }
+    
+    .shop__mobile-add{
+        position: absolute;
+        bottom:30px;
+        left:50%;
+        transform: translateX(-50%);
+        padding:10px 20px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px grey;
+        cursor: pointer;
+        letter-spacing: 2px;
+        font-size: $font-size3;
+        margin:10px;
+    }
+
+    .shop__mobile-one{
+        background-image:url('../images/items/Kevin-durant-14-cover.jpg');
+    }
+    
+    .shop__mobile-two{
+        background-image:url('../images/items/Air-Jordan-cmft-low-cover.jpg');
+    }
+    
+    .shop__mobile-three{
+        background-image:url('../images/items/adidas-don-issue-3-cover.jpg');
+    }
+    
+    .shop__mobile-four{
+        background-image:url('../images/items/Nike-lebron-18-cover.jpg');
+    }
+    
+    .shop__mobile-five{
+        background-image:url('../images/items/Jordan-max-aura-cover.jpg');
+    }
+    
+    .shop__mobile-six{
+        background-image:url('../images/items/Dame-7-gca-cover.jpg');
+    }
+    
+    .shop__mobile-seven{
+        background-image:url('../images/items/Harden-stepback-2-cover.jpg');
+    }
+    
+    .shop__mobile-eight{
+        background-image:url('../images/items/converse-4-cover.jpg');
+    }
+    
+    .shop__mobile-nine{
+        background-image:url('../images/items/Kyrie-flytrap-4-cover.jpg');
+    }
+    
+    .shop__mobile-ten{
+        background-image:url('../images/items/Nike-renew-elevate-cover.jpg');
+    }
+    
+    .shop__mobile-eleven{
+        background-image:url('../images/items/D-rose-11-cover.jpg');
+    }
+    
+    .shop__mobile-twelve{
+        background-image:url('../images/items/Paul-george-5-cover.jpg');
+    }
+    
+    .shop__mobile-thirteen{
+        background-image:url('../images/items/Under-armour-ua-spawn-3-cover.jpg');
+    }
+    
+    .shop__mobile-fourteen{
+        background-image:url('../images/items/Under-armour-ua-jet-cover.jpg');
+    }
+    
+    .shop__mobile-fifteen{
+        background-image:url('../images/items/D-rose-773-2020-cover.jpg');
+    }
+    
+    .shop__mobile-sixteen{
+        background-image:url('../images/items/Jordan-access-cover.jpg');
+    }
+
+}

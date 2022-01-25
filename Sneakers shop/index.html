@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dame Time</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login">
+            <div class="login__form">
+                <label>Username:</label>
+                <input type="text" name="user" id="user">
+                <label>Password:</label>
+                <input type="password" name="password" id="password">
+                <button class="login__submit">Submit</button>
+                <button class="login__close">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav__logo">
+                <img src="images/logo.png" alt="company logo">
+            </div>
+            <div class="nav__links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#shop">Shop</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav__icons">
+                <i class="fas fa-user nav__icons-login"></i>
+                <i class="fas fa-shopping-cart nav__icons-cart"></i>
+                <i class="fas fa-bars nav__icons-burger"></i>
+            </div>
+        </div>
+        <div class="main">
+            <div id="home" class="home">
+                <div class="home__brands">
+                    <h1 class="home__brands-title">Our Brands</h1>
+                    <div class="home__brands-image-wrapper">
+                        <div class="home__brands-image home__brands-one home__brands-image--active"></div>
+                        <div class="home__brands-image home__brands-two home__brands-image--next"></div>
+                        <div class="home__brands-image home__brands-three home__brands-image-next"></div>
+                        <div class="home__brands-image home__brands-four home__brands-image--next"></div>
+                    </div>
+                    <div class="home__brands-buttons">
+                        <button class="home__brands-previous">
+                            <i class="fas fa-long-arrow-alt-left"></i>
+                        </button>
+                        <button class="home__brands-next">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="home__title">
+                    <div class="home__title-circle">
+                    <h1 class="home__title-heading">Welcome</h1>
+                    </div>
+                    <p class="home__title-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste dolor aliquam cupiditate laudantium eligendi harum soluta expedita ea sapiente, veritatis eveniet consequuntur dicta deserunt minus odio blanditiis fugiat tenetur quasi et ipsum impedit beatae quaerat! Omnis porro iure expedita, consectetur, repellendus rerum recusandae minima, ratione molestiae corrupti fugiat unde repellat!
+                    </p>
+                </div>
+            </div>
+            <div id="about" class="about">
+                <div  class="about__intro">
+                    <div class="about__intro-text">
+                        <p> We provide the best customer service and the latest models of sneakers on the market. You can choose between many brands and get the best equipment for incredible price. If you have any questions, you can ask our staff for help or use the information on the bottom of the page to contact us!<br>  <span class="about__intro-span">Enjoy your shopping!</span>
+                        </p>
+                    </div>
+                    <div class="about__intro-image">
+                    </div>
+                </div>
+                <div class="about__workers">
+                    <h1 class="about__workers-title">Meet our staff!</h1>
+                </div>
+                <div class="about__video">
+                    <video autoplay muted loop>
+                        <source src="./images/dunk.mp4" type="video/mp4">
+                      </video>
+                      <h1 class="about__video-title">Break your limits!</h1>
+                      <p class="about__video-text">We have brand new colection of sneakers for you!</p>
+                </div>
+            </div>
+            <div id="shop" class="shop">
+                <div class="shop__items">
+                    <div class="shop__items-item">
+                        <h3>Kevin Durant 14</h3>
+                        <img src="./images/items/Kevin-durant-14.jpg" alt="Kevin Durant 14">
+                        <p>Price:<span>197.35 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Air Jordan 11 cmft low</h3>
+                        <img src="./images/items/Air-Jordan-11-cmft-low.jpg" alt="Air Jordan 11 cmft low">
+                        <p>Price:<span>163.55 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Adidas D.O.N. Issue 3</h3>
+                        <img src="./images/items/adidas-don-issue-3.jpg" alt="Adidas D.O.N. Issue 3">
+                        <p>Price:<span>131.99 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Lebron James 18</h3>
+                        <img src="./images/items/Nike-lebron-18.jpg" alt="Lebron James 18">
+                        <p>Price:<span>249.99 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Jordan Max Aura 2</h3>
+                        <img src="./images/items/Jordan-max-aura.jpg" alt="Jordan Max Aura 2">
+                        <p>Price:<span>157.99 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Dame 7 GCA</h3>
+                        <img src="./images/items/Dame-7-gca.jpg" alt="Dame 7 GCA">
+                        <p>Price:<span>95.58 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Harden Stepback 2</h3>
+                        <img src="./images/items/Harden-stepback-2.jpg" alt="Harden Stepback 2">
+                        <p>Price:<span>86.39 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Converse G4</h3>
+                        <img src="./images/items/converse-4.jpg" alt="Converse G4">
+                        <p>Price:<span>79.99 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Kyrie Flytrap 4</h3>
+                        <img src="./images/items/Kyrie-flytrap-4.jpg" alt="Kyrie Flytrap 4">
+                        <p>Price:<span>94.39 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Nike Renew Elevate</h3>
+                        <img src="./images/items/Nike-renew-elevate.jpg" alt="Nike Renew Elevate">
+                        <p>Price:<span>83.99 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>D Rose 11</h3>
+                        <img src="./images/items/D-rose-11.jpg" alt="D Rose 11">
+                        <p>Price:<span>103.99 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Paul George 5</h3>
+                        <img src="./images/items/Paul-george-5.jpg" alt=" Paul George 5">
+                        <p>Price:<span>126.39 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Under Armour UA Spawn</h3>
+                        <img src="./images/items/Under-armour-ua-spawn-3.jpg" alt="Under Armour UA Spawn 3">
+                        <p>Price:<span>79.99 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Under Armour UA Jet</h3>
+                        <img src="./images/items/Under-armour-ua-jet.jpg" alt="Under Armour UA Jet">
+                        <p>Price:<span>59.60 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>D Rose 773 2020</h3>
+                        <img src="./images/items/D-rose-773-2020.jpg" alt="D Rose 773 2020">
+                        <p>Price:<span>71.59 $</span></p>
+                    </div>
+                    <div class="shop__items-item">
+                        <h3>Jordan Access</h3>
+                        <img src="./images/items/Jordan-access.jpg" alt="Jordan Access">
+                        <p>Price:<span>75.34 $</span></p>
+                    </div>
+                </div>
+                <div class="shop__article">
+                    <div class="shop__article-image">
+                        <div class="shop__article-cover shop__article-one shop__article-cover--active">
+                        </div>
+                        <div class="shop__article-cover shop__article-two">
+                        </div>
+                        <div class="shop__article-cover shop__article-three">
+                        </div>
+                        <div class="shop__article-cover shop__article-four">
+                        </div>
+                        <div class="shop__article-cover shop__article-five">
+                        </div>
+                        <div class="shop__article-cover shop__article-six">
+                        </div>
+                        <div class="shop__article-cover shop__article-seven">
+                        </div>
+                        <div class="shop__article-cover shop__article-eight">
+                        </div>
+                        <div class="shop__article-cover shop__article-nine">
+                        </div>
+                        <div class="shop__article-cover shop__article-ten">
+                        </div>
+                        <div class="shop__article-cover shop__article-eleven">
+                        </div>
+                        <div class="shop__article-cover shop__article-twelve">
+                        </div>
+                        <div class="shop__article-cover shop__article-thirteen">
+                        </div>
+                        <div class="shop__article-cover shop__article-fourteen">
+                        </div>
+                        <div class="shop__article-cover shop__article-fifteen">
+                        </div>
+                        <div class="shop__article-cover shop__article-sixteen">
+                        </div>
+                    </div>
+                    <button class="shop__article-button">Add to cart</button>
+                </div>
+            </div>
+            <div class="shop__mobile">
+                <div class="shop__mobile-article">
+                    <div class="shop__mobile-cover shop__mobile-one">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-two">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-three">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-four">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-five">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-six">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-seven">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-eight">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-nine">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-ten">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-eleven">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-twelve">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-thirteen">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-fourteen">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-fifteen">
+                    </div>
+                    <div class="shop__mobile-cover shop__mobile-sixteen">
+                    </div>
+                </div>
+                <button class="shop__mobile-add">
+                    Add to cart
+                </button>
+                <button class="shop__mobile-close"><i class="fas fa-times-circle"></i>
+                </button>
+            </div>
+            <div id="contact" class="contact">
+                <div class="contact__links">
+                    <a href="https://github.com/strahinja1994"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/strahinja-djurnic-a84057213/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="contact__email">
+                    <p>You can talk to us here:</p>
+                    <a href="#">strahinjadjurnic@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/login.js"></script>
+    <script src="javascript/nav.js"></script>
+    <script src="javascript/home.js"></script>
+    <script src="javascript/shop.js"></script>
+    <script src="javascript/about.js"></script>
+</body>
+</html>
